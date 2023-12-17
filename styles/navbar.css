@@ -1,0 +1,80 @@
+header {
+   
+    padding: 15px 0; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* Adjust the styles for your logo */
+    max-width: 7%; /* Set the maximum width of the logo */
+    margin-left: 10px;
+}
+
+.nav-items {
+    /* Adjust the styles for your navigation items */
+    display: flex;
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items a {
+    color: #404040; /* Set the color of the navigation links */
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    margin: 0 10px; /* Adjust the margin between navigation items */
+}
+
+
+ /* Hamburger menu styles */
+ .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-items a {
+        margin: 0;
+        padding: 15px 20px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 10px;
+    }
+}
