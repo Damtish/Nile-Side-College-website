@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.nile {
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+section {
+    padding: 40px;
+    text-align: justify;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.degree-offerings {
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.degree {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.degree h3 {
+    color: green;
+}
+
+.diploma-offerings-health {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.diploma-offerings-business{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.diploma {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.diploma h3 {
+    color:green;
+}
+.container-animated{
+    background-color: #3498db;
+}
+
+.diff{
+    grid-area: diff;
+    font-size: large;
+    line-height: 1.6em;
+    /* max-width: 70ch; */
+    margin: auto;
+    padding: 20px;
+
+}
+.vismiss{
+    grid-area: vismiss;
+    font-size: large;
+    line-height: 1.6em;
+    /* max-width: 70ch; */
+    margin: auto;
+    padding: 20px;
+
+}
+.core{
+    grid-area: core;
+    font-size: large;
+    line-height: 1.6em;
+    /* max-width: 70ch; */
+     margin: auto; 
+    padding: 20px;
+
+}
+
+.container1 {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+
+  .container1 .content {
+    height: 100vh;
+    display: grid;
+    /* padding: 10px; */
+    /* gap: 10px; */
+    grid-template-columns: 2fr 2fr 2fr ;
+    grid-template-rows: 3fr ;
+    grid-template-areas: 
+    'diff vismiss core';
+    background-color: lightskyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+
+  .container1 h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .container1 p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .container1 .animated-text {
+    font-size: 18px;
+    font-weight: bold;
+    animation: textAnimation 2s infinite;
+  }
+              
+ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;
+    text-align: start;
+    /* line-height: 2; */
+  }
+  
+  ul li::before {
+    content: '*';
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+      
+  
+
+
+footer {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: fadeInUp 1s ease-out;
+}
+
+
+@media screen and (min-width: 600px) {
+    .degree, .diploma {
+        flex: 0 0 48%; /* Two columns on tablets */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .degree, .diploma {
+        flex: 0 0 48%; /* Two columns on tablets */
+    }
+}
+
