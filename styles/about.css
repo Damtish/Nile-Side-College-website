@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -29,26 +29,27 @@ p {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .degree-offerings {
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-between;
+    justify-content:center;
     margin-top: 20px;
+    width: 100%;
     
 }
 
 .degree {
-    flex: 0 0 48%;
     margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #d3d3d3;
+    padding: 10px;
     border-radius: 8px;
     text-align: center;
+     border: 1px solid #d3d3d3;
 }
 
 .degree h3 {
@@ -58,7 +59,7 @@ p {
 .diploma-offerings-health {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: space-between;
     margin-top: 20px;
@@ -67,16 +68,15 @@ p {
 .diploma-offerings-business{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .diploma {
-    flex: 0 0 48%;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #d3d3d3;
     border-radius: 8px;
     text-align: center;
