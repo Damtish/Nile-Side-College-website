@@ -24,10 +24,10 @@ span {
 
 } */
 
-.wrapper {
-  /* background-color: #111111; */
+/* .wrapper {
+  background-color: #111111;
  
-}
+} */
 
 .homepage {
   width: 100%;
@@ -894,9 +894,9 @@ footer .company-name {
     width: 25%;
   }
 
-  .wrapper2 {
-    /* padding-bottom: 70px; */
-  }
+  /* .wrapper2 {
+    padding-bottom: 70px;
+  } */
 
   .container2 .image img {
     width: 100%;

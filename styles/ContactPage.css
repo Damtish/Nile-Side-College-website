@@ -9,7 +9,7 @@ body {
 }
 #contact,
 span {
-    color: #2A6482;
+    color: #90CAF9;
 }
 .homepage::before {
     content: "";
@@ -80,7 +80,7 @@ span {
     color: white;
     text-decoration: none;
     border-radius: 13.029px;
-    background: #2A6482;
+    background: #90CAF9;
     box-shadow: 0px 4px 33px 6px rgba(62, 106, 144, 0.16);
     padding: 10px 15px 10px 15px;
     transition: background-color 0.3s ease-in;
@@ -172,9 +172,10 @@ span {
     width: 65%;
     margin: 0 auto;
     gap: 30px;
+
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
     padding: 50px;
-    background-color: #222222;
+  background: linear-gradient(to bottom, #90CAF9, #00263f);
     border-radius: 20px;
     color: white;
 }
@@ -214,7 +215,7 @@ iframe {
 
 
 button {
-    background-color: orange;
+    background-color: #2E7D32;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -226,7 +227,7 @@ button {
 }
 
 button:hover {
-    background-color: #2A6482;
+    background-color: #90CAF9;
 }
 
 .black-footer {
@@ -383,9 +384,9 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    .quote-section button {
+    /* .quote-section button {
     
-    }
+    } */
 }
 
 
@@ -408,9 +409,9 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    .quote-section button {
+    /* .quote-section button {
         
-    }
+    } */
 
     .contactform {
         width: 80%;
@@ -502,8 +503,8 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    .quote-section button {
+    /* .quote-section button {
        
-    }
+    } */
 
 }
