@@ -6,35 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gursha Digitals- Contact</title>
     <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="styles/ContactPage.css">
 </head>
 
 <body>
-    <button id="scrollToTopButton"><img src="pics/arrow-up-solid.svg" alt=""></button>
-    <div class="homepage">
-        <div class="logo">
-            <img src="images/photo_2023-12-23_17-12-32-removebg-preview.png" alt="">
-            <p></p>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/photo_2023-12-23_17-12-32-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="nav-items">
+                <a  href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="addmissions.html">Addmissions</a>
+                <a id="contact" href="ContactPage.html">Contact</a>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-        <nav class="navbar" id="navbar">
 
-            <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
-            <label for="navbar-toggle" class="navbar-toggle-label">
-                <span class="navbar-toggle-icon">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </span>
-            </label>
-            <ul class="navbar-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a id="contact" href="ContactPage.php">Contact</a></li>
-            </ul>
-        </nav>
+    </header>
+    <div class="homepage">
         <div class="introduction">
             <div class="quote-section">
                 <h2>REACH US</h2>
@@ -56,9 +55,7 @@
 
             </div> -->
             <div class="sm_managment services">
-                <!-- <div class="image-container">
-                    <img src="pics/email.png" alt="">
-                </div> -->
+                
                 <div class="content">
                     <h2>CALL FOR REGISTRATION</h2>
                     <p>0911147023 <br><br></p>
@@ -130,7 +127,8 @@
         <div class="footer-left">
             <img src="pics/URSHA_LOGO-removebg-preview.png" alt="">
             <p class="company-quote">Elevate your brand with digital marketing mastery.</p>
-            <p class="phone-number">Phone-1 : 0911147023 <br><br>Phone-2 : 0922465420<br><br>Phone-3 : 0919433321<br><br>Email: nilesidecollege@gmail.com</p>
+            <p class="phone-number">Phone-1 : 0911147023 <br><br>Phone-2 : 0922465420<br><br>Phone-3 :
+                0919433321<br><br>Email: nilesidecollege@gmail.com</p>
             <!-- <div class="social-icons">
                 <a class="social-container">
                     <img src="pics/Platform=Facebook, Color=Negative.png" alt="Facebook" class="social_image blue">
@@ -175,54 +173,15 @@
     </footer>
 </body>
 <script>
-    window.addEventListener('scroll', function () {
-        var menu = document.getElementById('navbar');
-        var scrollPosition = window.scrollY;
-
-        if (scrollPosition > 450) { // Change the value to the desired scroll position
-            menu.classList.add('scrolled');
-        } else {
-            menu.classList.remove('scrolled');
-        }
-    });
+function toggleMenu() {
+        const navItems = document.querySelector('.nav-items');
+        navItems.classList.toggle('show');
+        document.body.classList.toggle('menu-open');
+    }
 
 
-    window.addEventListener('load', function () {
-        var loadingScreen = document.querySelector('.loading-screen');
-        loadingScreen.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const scrollToTopButton = document.getElementById("scrollToTopButton");
-
-        // Show the button when user scrolls down 100px
-        window.addEventListener("scroll", function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopButton.style.display = "block";
-            } else {
-                scrollToTopButton.style.display = "none";
-            }
-        });
-
-        // Scroll to the top when the button is clicked
-        scrollToTopButton.addEventListener("click", function () {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        });
-    });
-
-
-    const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarToggleLabel = document.querySelector('.navbar-toggle-label');
-
-    navbarToggle.addEventListener('change', function () {
-        if (this.checked) {
-            navbarToggleLabel.classList.add('active');
-        } else {
-            navbarToggleLabel.classList.remove('active');
-        }
-    });
+  
+  
 </script>
 
 <?php
