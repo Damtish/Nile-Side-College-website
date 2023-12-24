@@ -6,7 +6,7 @@ body {
 
 #home,
 span {
-    color: #4200FF;
+    color: #2A6482;
 }
 
 h1 {
@@ -55,14 +55,14 @@ p {
     color: white;
     text-decoration: none;
     border-radius: 13.029px;
-    background: #4200FF;
-    box-shadow: 0px 4px 33px 6px rgba(66, 0, 255, 0.16);
+    background: #2A6482;
+    box-shadow: 0px 4px 33px 6px rgba(62, 106, 144, 0.16);
     padding: 15px 20px 15px 20px;
     transition: background-color 0.3s ease-in;
 }
 
 .intro .col1 a:hover {
-    background-color: #280094;
+    background-color: #2d5b72;
 }
 
 .col2 {
@@ -122,7 +122,7 @@ p {
 
 .programes .cards .card:hover {
     transition: all 0.5s ease-in-out;
-    background-color: #4200FF;
+    background-color: #2A6482;
     color: white;
     cursor: pointer;
 }
@@ -209,7 +209,7 @@ p {
     align-items: center;
     flex-shrink: 0;
     border-radius: 20.847px;
-    background: #4200FF;
+    background: #2A6482;
 }
 
 .testimonials {

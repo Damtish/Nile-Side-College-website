@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/addmissons.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Addmissions</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/photo_2023-12-23_17-12-32-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a id="addmissions" href="#">Addmissions</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="intro1">
+        <div>
+            <h1>Admission to B. Sc. Programmes</h1>
+            <p>Admission is available both in day-time and evening programmes. The B.Sc. programme falls within two
+                categories:
+                <br><br>
+                The first category is at advanced standing level. Applicants eligible for admission at this level are
+                graduates with degree in any field from accredited university/college. Exemptions for transfer
+                applicants or graduates from another university could be requested, for the courses taken before joining
+                HiLCoE, during application for admission by completing a separate form made available for this purpose.
+                <br><br>
+                The second category of applicants eligible for the regular B. Sc. Programmes are those students who
+                passed The Ethiopian Higher Education Entrance Certificate Examination or its equivalent and fulfill the
+                formal requirements set by the Ministry of Science and Higher Education.
+            </p>
+            <img src="images/photo_2023-12-23_17-12-32-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <h5>Admission Procedure</h5>
+            <p>
+                Admission is open for Ethiopians as well as international students. Apart from the stated requirements
+                for admissions into the different study programmes, Special Criteria for Admission may also be set by
+                the Academic Council when deemed necessary, through entrance exams, interviews or by reviewing merits
+                already attained. The Academic Programme Council determines the number of students who may be admitted
+                to each study programme in each entry according to the college’s available resources. The final
+                selection for admission is usually made on a competitive basis and according to the number of places
+                available.
+                <br>
+                To help the Academic Programme Council assess the applications made for admission to the college, each
+                applicant is required to submit the following to the Admissions Office:
+                <ol>
+                    <li>A completed application form obtained from the Office</li>
+                    <li>Certified copies of original documents (degree, transcript, academic testimonials/ references/recommendations or any documents that could be used as an evidence of an academic attainment).</li>
+                    <li>
+                        Two 2 X 3 size pictures (taken within the last six months)
+                        </li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        const navItems = document.querySelector('.nav-items');
+        navItems.classList.toggle('show');
+        document.body.classList.toggle('menu-open');
+    }
+
+</script>
+
+</html>

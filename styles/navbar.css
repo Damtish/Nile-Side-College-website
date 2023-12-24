@@ -16,6 +16,16 @@ header {
     max-width: 7%;
     /* Set the maximum width of the logo */
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 70px;
+    /* display: flex;
+    align-items: center;
+    background-color: #404040;
+    justify-content: center; */
 }
 
 .nav-items {
@@ -70,6 +80,7 @@ header {
         top: 65px;
         left: 0;
         background-color: #ffffff;
+        z-index: 1000;
     }
 
     .nav-items.show {

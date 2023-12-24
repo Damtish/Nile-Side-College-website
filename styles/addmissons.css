@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Use the Poppins font or your preferred font */
+}
+
+#addmissions,
+span {
+    color: #2A6482;
+}
+.intro1{
+    padding-top: 50px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    text-wrap: wrap;
+}
+
+@media (max-width: 768px){
+    .intro1{
+     flex-wrap: wrap;
+    }   
+    .intro1 img{
+        width: 100%;
+    }
+}
