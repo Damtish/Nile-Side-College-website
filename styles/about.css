@@ -406,12 +406,12 @@ p {
 
 
 .black-footer {
-  background-color: #2E7D32;
+  background-color: #111111;
   color: #ffffff;
   padding: 50px;
-  border-radius: 50% / 30px;
+  /* border-radius: 50% / 30px;
   border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0; */
 }
 
 .footer-left {
@@ -511,7 +511,7 @@ p {
 }
 
 .quick-links li a:hover {
-  color: #F9991D;
+  color: #2E7D32;
 }
 
 .footer-bottom {
