@@ -129,10 +129,10 @@ p {
 }
 
 .programes .cards .card:hover {
-    transition: all 0.5s ease-in-out;
     background-color: #90CAF9;
     color: white;
     cursor: pointer;
+    transform: translateY(-10px);
 }
 
 .programes .cards .card:hover p {
@@ -150,6 +150,7 @@ p {
     backdrop-filter: blur(14.371501922607422px);
     width: 200px;
     height: 180px;
+    transition: all 0.5s ease-in-out;
 }
 
 .programes .cards .card img {
@@ -181,7 +182,7 @@ p {
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 /* .teachers .doctors .doctor:hover{
@@ -203,21 +204,25 @@ p {
     background: #FFF;
     box-shadow: 0px 3.525px 21.147px -0.881px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(17.622638702392578px);
-    width: 45%;
-    padding-top: 20px;
+    width: 300px;
+    padding: 20px 10px 10px 10px;
+    transition: all 0.5s ease;
 
+}
+.doctor:hover{
+    transform: translateY(-10px);
+}
+.doctor p{
+    margin-top: 0;
 }
 
 .teachers .doctors .doctor img {
     display: flex;
-    width: 171.226px;
-    height: 131.026px;
+    width: 121.226px;
+    height: 81.026px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    border-radius: 20.847px;
-    background: #90CAF9;
 }
 
 .testimonials {
@@ -275,140 +280,6 @@ p {
 }
 
 
-.black-footer {
-    background-color: #111111;
-    color: #ffffff;
-    padding: 50px;
-    margin-top: 200px;
-    /* border-radius: 50% / 30px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0; */
-}
-
-.company-name {
-    color: #90CAF9;
-}
-
-.footer-left {
-    float: left;
-    width: 50%;
-
-}
-
-.footer-left img {
-    width: 10%;
-}
-
-.footer-left .social-icons {
-    display: flex;
-    gap: 10px;
-    position: relative;
-}
-
-.footer-left .social-icons a img {
-    width: 25px;
-}
-
-.social-container {
-    position: relative;
-    width: 25px;
-    display: flex;
-    color: #909090;
-    flex-direction: column;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-
-}
-
-.social-container img {
-    position: absolute;
-    width: 25px;
-    opacity: 1;
-    padding-top: 3px;
-    transition: all 0.8s ease;
-    border-radius: 5px;
-}
-
-.social_image.white {
-    opacity: 0;
-}
-
-
-
-.social-container:hover .social_image.blue {
-    opacity: 0;
-}
-
-.social-container:hover .social_image.white {
-    opacity: 1;
-}
-
-.footer-left .social-icons .threads.social-container:hover img {
-    background-color: white;
-}
-
-
-.company-quote {
-    margin: 0;
-    font-size: 18px;
-    color: white;
-}
-
-.phone-number {
-    margin-top: 5px;
-    font-size: 14px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.footer-right {
-    float: right;
-    width: 50%;
-    text-align: right;
-}
-
-.quick-links-title {
-    margin: 0;
-    font-size: 16px;
-}
-
-.quick-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.quick-links li {
-    margin-bottom: 5px;
-}
-
-.quick-links li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.2s ease;
-}
-
-.quick-links li a:hover {
-    color: #2E7D32;
-}
-
-.footer-bottom {
-    clear: both;
-    text-align: center;
-    margin-top: 20px;
-    
-}
-.footer-bottom p{
-    color: white;
-}
-
-.company-name {
-    margin: 0;
-    font-size: 14px;
-    color: #90CAF9;
-}
-  
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -481,42 +352,5 @@ p {
         padding:20px 30px 20px 30px;
     
     }
-    .black-footer {
-        padding: 10px;
-      }
-    
-      .footer-left,
-      .footer-right {
-        float: none;
-        width: 100%;
-        text-align: center;
-      }
-    
-      .footer-left .social-icons {
-        justify-content: center;
-      }
-    
-      .footer-left .social-icons a img {
-        width: 20px;
-      }
-    
-      .company-quote {
-        font-size: 16px;
-      }
-    
-      .phone-number {
-        font-size: 12px;
-      }
-    
-      .quick-links-title {
-        font-size: 14px;
-      }
-    
-      .quick-links li a {
-        font-size: 12px;
-      }
-    
-      footer .company-name {
-        font-size: 12px;
-      }
+
 }

@@ -69,7 +69,9 @@ header {
     .navbar {
         flex-direction: row;
     }
-
+    .logo{
+        margin-left: 30px;
+    }
     .nav-items {
         display: none;
         flex-direction: column;

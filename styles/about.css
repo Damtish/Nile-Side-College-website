@@ -426,129 +426,6 @@ p {
 }
 
 
-
-.black-footer {
-  background-color: #111111;
-  color: #ffffff;
-  padding: 50px;
-  /* border-radius: 50% / 30px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; */
-}
-
-.footer-left {
-  float: left;
-  width: 50%;
-
-}
-
-.footer-left img {
-  width: 15%;
-}
-
-.footer-left .social-icons {
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
-
-.footer-left .social-icons a img {
-  width: 25px;
-}
-
-.social-container {
-  position: relative;
-  width: 25px;
-  display: flex;
-  color: #909090;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-
-}
-
-.social-container img {
-  position: absolute;
-  width: 25px;
-  opacity: 1;
-  padding-top: 3px;
-  transition: all 0.8s ease;
-  border-radius: 5px;
-}
-
-.social_image.white {
-  opacity: 0;
-}
-
-
-
-.social-container:hover .social_image.blue {
-  opacity: 0;
-}
-
-.social-container:hover .social_image.white {
-  opacity: 1;
-}
-
-.footer-left .social-icons .threads.social-container:hover img {
-  background-color: white;
-}
-
-.company-quote {
-  margin: 0;
-  font-size: 18px;
-}
-
-.phone-number {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.footer-right {
-  float: right;
-  width: 50%;
-  text-align: right;
-}
-
-.quick-links-title {
-  margin: 0;
-  font-size: 16px;
-}
-
-.quick-links {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.quick-links li {
-  margin-bottom: 5px;
-}
-
-.quick-links li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.2s ease;
-}
-
-.quick-links li a:hover {
-  color: #2E7D32;
-}
-
-.footer-bottom {
-  clear: both;
-  text-align: center;
-  margin-top: 20px;
-}
-
-footer .company-name {
-  margin: 0;
-  font-size: 14px;
-}
-
-
-
 /*     
 .item2{
      grid-area: item1;
@@ -624,29 +501,7 @@ footer .company-name {
 }
 
 @media (max-width:1000px) {
-  .logo {
-    margin-left: 4%;
-  }
-
-  .navbar-menu {
-    margin-right: 10%;
-  }
-
-  .logo2 img {
-    width: 25%;
-    word-wrap: break-word;
-  }
-
-
-
-  .logo2 p {
-    margin-bottom: 0;
-    font-size: 40px;
-    text-transform: uppercase;
-    line-height: 1.3em;
-  }
-
-
+ 
   .col2 .image img {
     width: 100%;
   }
@@ -664,90 +519,9 @@ footer .company-name {
   }
 }
 
-@media (max-width: 860px) {
-  .logo {
-    margin-left: 2%;
-  }
-
-  .navbar-menu {
-    margin-right: 8%;
-  }
-}
 
 @media (max-width: 768px) {
-  .logo {
-
-    margin-left: 5%;
-
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-end;
-
-  }
-
-  .navbar-toggle {
-    display: block;
-    opacity: 0;
-  }
-
-  .navbar-toggle-label {
-    display: block;
-    order: -1;
-  }
-
-  .navbar-menu {
-    position: absolute;
-    top: 120px;
-    visibility: hidden;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* Added */
-    justify-content: center;
-    /* Added */
-    background-color: rgba(0, 0, 0, 0.1);
-    /* Adjust the last value (0.5) for transparency */
-    backdrop-filter: blur(10px);
-    /* Adjust the blur value as desired */
-    z-index: 9999;
-    /* Adjust the z-index as needed */
-    height: 70vh;
-    font-size: 20px;
-    margin-right: 0%;
-    gap: 0px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-
-  }
-
-  .navbar-menu li {
-    margin: 30px 0;
-  }
-
-  .navbar-menu li a {
-    color: white;
-  }
-
-  .navbar-toggle:checked~.navbar-menu {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .navbar-toggle:checked+.navbar-toggle-label .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 3px);
-  }
-
-  .navbar-toggle:checked+.navbar-toggle-label .hamburger-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar-toggle:checked+.navbar-toggle-label .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(4px, -3px);
-  }
-
+  
   .wrapper::before,
   .wrapper {
     height: 60vh;
@@ -819,10 +593,6 @@ footer .company-name {
     text-align: center;
   }
 
-  .footer-right {
-    margin-top: 50px;
-  }
-
 }
 
 @media (max-width:680px) {
@@ -834,6 +604,7 @@ footer .company-name {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
   }
 
   .introduction .logo2 p {
@@ -855,45 +626,6 @@ footer .company-name {
 
   .col2 .image img {
     width: 50%;
-  }
-
-  .black-footer {
-    padding: 10px;
-  }
-
-  .footer-left,
-  .footer-right {
-    float: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer-left .social-icons {
-    justify-content: center;
-  }
-
-  .footer-left .social-icons a img {
-    width: 20px;
-  }
-
-  .company-quote {
-    font-size: 16px;
-  }
-
-  .phone-number {
-    font-size: 12px;
-  }
-
-  .quick-links-title {
-    font-size: 14px;
-  }
-
-  .quick-links li a {
-    font-size: 12px;
-  }
-
-  footer .company-name {
-    font-size: 12px;
   }
 
 }
