@@ -168,6 +168,13 @@ span {
     opacity: 1;
     transition: opacity 0.8s ease;
 }
+.service_collection .image-container .content a{
+    transition: background-color 0.3s ease-in;
+}
+.service_collection .image-container .content a:hover {
+    background-color: #90CAF9
+}
+
 
 .services .image-container img {
     width: 50px;
