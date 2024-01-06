@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nilde Side Admisson Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+   </head>
+<style>
+
+    header{
+        background-color: white;
+    }
+
+    .page {
+        display: none;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    table input {
+        width: 90%;
+    }
+
+    table td {
+        background-color: unset;
+    }
+</style>
+
+<body>
+    <h1>NILE SIDE COLLEGE</h1>
+    <h2>Application for admisson to the under Graduate Programme instruction</h2>
+    <p>This application Form should be completed by the applicant
+        Use block letters to complete this form legibly. <br>
+        Write the required information in the space provided. <br>
+        Attach all necessary educational documents
+        Showing full
+        Send the completed application form once Completed.</p>
+
+    <form method="post" action="generate-pdf.php">
+
+        <div class="page active" id="page1">
+
+            <h3>I. Classification of Admission:</h3>
+            <label><input type="radio" name="admission_type" value="day(Regular) Programme" required> Day (Regular) Programme</label>
+            <label><input type="radio" name="admission_type" value="evening(Extension)" required> Evening (Extension)
+                Programme</label>
+
+            <h3>II. Personal Information:</h3>
+            <label for="name">Name: <input type="text" name="name" required></label><br>
+            <label for="father_name">Father's Name: <input type="text" name="father_name" required></label><br>
+            <label for="grandfather_name">Grandfather's Name: <input type="text" name="grandfather_name"
+                    required></label><br>
+
+            <label>Sex:
+                <label><input type="radio" name="sex" value="male" required> Male</label>
+                <label><input type="radio" name="sex" value="female" required> Female</label>
+            </label><br>
+
+            <label for="nationality">Nationality: <input type="text" name="nationality" required></label><br>
+
+            <label for="place_of_birth">Place of Birth
+                <label for="place_of_birth">Town:
+                    <input type="text" name="place_of_birth_town" id="place_of_birth_town" required></label>
+
+                <label for="">Reigon:
+                    <input type="text" name="place_of_birth_reigon" id="place_of_birth_reigon" required></label>
+
+                <label for="">Country:
+                    <input type="text" name="place_of_birth_country" id="place_of_birth_country" required></label>
+            </label><br>
+
+            <label for="date_of_birth">Date of Birth: <input type="date" name="date_of_birth" required></label><br>
+            <button onclick="nextPage()">Next</button>
+            <h3>Page 1</h3>
+        </div>
+
+        <div class="page" id="page2">
+
+            <label>Residence Address:
+                <label for="house_no">House No: <input type="text" name="house_no" required></label>
+                <label for="kebele">Kebele: <input type="text" name="kebele" required></label>
+                <label for="sub_city">Sub City: <input type="text" name="sub_city" required></label>
+                <label for="town">Town: <input type="text" name="town" required></label>
+                <label for="region">Region: <input type="text" name="region" required></label>
+            </label><br>
+            <label for="mailing_address">Mailing Address: <input type="text" name="mailing_address"
+                    required></label><br>
+            <label for="mobile">Mobile Number: <input type="tel" name="mobile" required></label><br>
+            <label>Marital Status:
+                <label><input type="radio" name="marital_status" value="single" required> Single</label>
+                <label><input type="radio" name="marital_status" value="married" required> Married</label>
+                <label><input type="radio" name="marital_status" value="widow_widower" required> Widow/Widower</label>
+                <label><input type="radio" name="marital_status" value="divorce" required> Divorce</label>
+            </label><br><br>
+            <label>Emergency Contact: <br>
+                <label for="emergency_contact_name">Name: <input type="text" name="emergency_contact_name"
+                        required></label>
+                <label for="emergency_contact_relationship">Relationship: <input type="text"
+                        name="emergency_contact_relationship" required></label>
+                <label for="emergency_contact_mobile">Phone Number: <input type="tel" name="emergency_contact_mobile"
+                        required></label>
+                <br>
+                <label>Residence Address:
+                    <label for="house_no">House No: <input type="text" name="emergency_contact_house_no"
+                            required></label>
+                    <label for="kebele">Kebele: <input type="text" name="emergency_contact_kebele" required></label>
+                    <label for="sub_city">Sub City: <input type="text" name="emergency_contact_sub_city"
+                            required></label>
+                    <label for="region">Region: <input type="text" name="emergency_contact_region" required></label>
+                </label><br>
+            </label><br>
+
+
+
+            <button onclick="previousPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+            <h3>Page 2</h3>
+        </div>
+
+        <div class="page" id="page3">
+
+            <h3>III. Family Background:</h3>
+            <label for="father_name">Father's Name: <input type="text" name="father_name" required></label><br>
+            <label for="father_occupation">Father's Occupation: <input type="text" name="father_occupation"
+                    required></label><br>
+            <label for="father_education">Father's Education Level: <input type="text" name="father_education"
+                    required></label><br>
+            <label for="father_address">Father's Address: <input type="text" name="father_address" required></label><br>
+            <label for="mother_name">Mother's Name: <input type="text" name="mother_name" required></label><br>
+            <label for="mother_occupation">Mother's Occupation: <input type="text" name="mother_occupation"
+                    required></label><br>
+            <label for="mother_education">Mother's Education Level: <input type="text" name="mother_education"
+                    required></label><br>
+            <label for="mother_address">Mother's Address: <input type="text" name="mother_address" required></label><br>
+
+            <h3>IV. Educational Information:</h3>
+            <h4>4.1. Secondary School(s) Attended:</h4>
+            <label for="school_name">School Name: <input type="text" name="school_name" required></label><br>
+            <label for="town">Town: <input type="text" name="town_school" required></label><br>
+            <label for="years_attended">Years Attended: <input type="text" name="years_attended" required></label><br>
+            <label for="last_grade_completed">Last Grade Completed: <input type="text" name="last_grade_completed"
+                    required></label><br>
+
+            <h4>4.2. School Leaving Examination Details:</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Subject</th>
+                        <th>Registration No</th>
+                        <th>Year</th>
+                        <th>Grade/Mark</th>
+                        <th>Examination Center</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mathematics</td>
+                        <td><input type="text" name="math_registration_no" required></td>
+                        <td><input type="text" name="math_exam_year" required></td>
+                        <td><input type="text" name="math_grade_mark" required></td>
+                        <td><input type="text" name="math_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>English</td>
+                        <td><input type="text" name="english_registration_no" required></td>
+                        <td><input type="text" name="english_exam_year" required></td>
+                        <td><input type="text" name="english_grade_mark" required></td>
+                        <td><input type="text" name="english_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" name="course3_name" required></td>
+                        <td><input type="text" name="course3_registration_no" required></td>
+                        <td><input type="text" name="course3_exam_year" required></td>
+                        <td><input type="text" name="course3_grade_mark" required></td>
+                        <td><input type="text" name="course3_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><input type="text" name="course4_name" required></td>
+                        <td><input type="text" name="course4_registration_no" required></td>
+                        <td><input type="text" name="course4_exam_year" required></td>
+                        <td><input type="text" name="course4_grade_mark" required></td>
+                        <td><input type="text" name="course4_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><input type="text" name="course5_name" required></td>
+                        <td><input type="text" name="course5_registration_no" required></td>
+                        <td><input type="text" name="course5_exam_year" required></td>
+                        <td><input type="text" name="course5_grade_mark" required></td>
+                        <td><input type="text" name="course5_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><input type="text" name="course6_name" required></td>
+                        <td><input type="text" name="course6_registration_no" required></td>
+                        <td><input type="text" name="course6_exam_year" required></td>
+                        <td><input type="text" name="course6_grade_mark" required></td>
+                        <td><input type="text" name="course6_exam_center" required></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><input type="text" name="course7_name" required></td>
+                        <td><input type="text" name="course7_registration_no" required></td>
+                        <td><input type="text" name="course7_exam_year" required></td>
+                        <td><input type="text" name="course7_grade_mark" required></td>
+                        <td><input type="text" name="course7_exam_center" required></td>
+                    </tr>
+                    <!-- Repeat similar rows for subjects 3 to 7 -->
+                </tbody>
+            </table>
+            <label for="">Grade point average(GPA)/Average Mark<input type="text" name="gpa"></label>
+            <h3>V. Employment:</h3>
+            <label for="employment_status">Are you currently employed?
+                <label><input type="radio" name="employment_status" value="yes" required> Yes</label>
+                <label><input type="radio" name="employment_status" value="no" required> No</label>
+            </label><br>
+
+            <div id="employment-details" style="display: none;">
+                <label for="employer">Employer: <input type="text" name="employer"></label><br>
+                <label for="job_type">Type of Job: <input type="text" name="job_type"></label><br>
+                <label for="mailing_address_employer">Mailing Address: <input type="text"
+                        name="mailing_address_employer"></label><br>
+                <label for="telephone_employer">Telephone: <input type="tel" name="telephone_employer"></label><br>
+            </div>
+
+            <h2>Page 3</h2>
+
+            <button onclick="previousPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="page" id="page4">
+            <h3>VI. Previous Employment:</h3>
+            <label for="previous_employment">Have you had previous employment?
+                <label><input type="radio" name="previous_employment" value="yes" required> Yes</label>
+                <label><input type="radio" name="previous_employment" value="no" required> No</label>
+            </label><br>
+
+            <div id="previous-employment-details" style="display: none;">
+                <label for="previous_job_type">Type of Job: <input type="text" name="previous_job_type"></label><br>
+                <label for="previous_employer">Employer: <input type="text" name="previous_employer"></label><br>
+                <label for="previous_telephone">Telephone: <input type="tel" name="telephone_previous_employer"></label><br>
+                <label for="service_years_from">Service Years From: <input type="text"
+                        name="service_years_from"></label><br>
+                <label for="service_years_to">Service Years To: <input type="text" name="service_years_to"></label><br>
+            </div>
+
+            <h3>VII. Desired Field of Study:</h3>
+            <label for="field_of_study">Select your desired field of study:</label>
+            <select name="field_of_study" required>
+                <optgroup label="Bachelor's Programs">
+                    <option value="doctor_dental_medicine_degree">Doctor of Dental Medicine(Degree)</option>
+                    <option value="doctor_medicine_degree">Doctor of Medicine(Degree)</option>
+                    <option value="public_health_degree">Public Health(Degree)</option>
+                    <option value="nurse_degree">Nurse (Degree)</option>
+                    <option value="pharmacy_degree">Pharmacy (Degree)</option>
+                    <option value="medical_laboratory_degree">Medical Laboratory (Degree)</option>
+                    <option value="medical_radiology_degree">Medical Radiology (Degree)</option>
+                    <option value="dental_technician_degree">Dental Technician (Degree)</option>
+                    <option value="dental_therapy_degree">Dental Therapy (Degree)</option>
+                </optgroup>
+                <optgroup label="Level IV Programs">
+                    <option value="nurse_level_iv">Nurse (Level IV)</option>
+                    <option value="pharmacy_level_iv">Pharmacy (Level IV)</option>
+                    <option value="medical_laboratory_level_iv">Medical Laboratory (Level IV)</option>
+                    <option value="medical_radiology_level_iv">Medical Radiology (Level IV)</option>
+                    <option value="dental_technician_level_iv">Dental Technician (Level IV)</option>
+                    <option value="dental_therapy_level_iv">Dental Therapy (Level IV)</option>
+                </optgroup>
+            </select><br>
+
+
+            <h3>VIII. Statement by the Applicant:</h3>
+            <p>I hereby certify that all information given in this form is complete and accurate. I fully realize that
+                the college is entitled to take any action against me, including dismissal, if the information given by
+                me here is found to be false or misleading. I also realize that I will not be entitled to any
+                reimbursement of whatever fee I might have paid in case where the college takes any action against me as
+                a result of any false or misleading information given by me. I would abide by all the rules and
+                regulations of the college in general.</p>
+            <p>I shall take full responsibility for reading and abiding by the rules and regulations laid down in the
+                college hand.</p>
+            <label for="applicant_signature">Signature of Applicant: <input type="text" name="applicant_signature"
+                    required></label><br>
+
+            
+            <script>
+                document.querySelector('input[name="previous_employment"]').addEventListener('change', function () {
+                    const previousEmploymentDetails = document.getElementById('previous-employment-details');
+                    previousEmploymentDetails.style.display = this.value === 'yes' ? 'block' : 'none';
+                });
+            </script>
+
+
+            <h2>Page 4</h2>
+
+            <button onclick="previousPage()">Previous</button>
+            <button>Submit Form</button>
+        </div>
+
+
+
+
+    </form>
+
+</body>
+<script>
+ 
+    let currentPage = 1;
+
+    function nextPage() {
+        document.getElementById(`page${currentPage}`).classList.remove('active');
+        currentPage++;
+        document.getElementById(`page${currentPage}`).classList.add('active');
+    }
+
+    function previousPage() {
+        document.getElementById(`page${currentPage}`).classList.remove('active');
+        currentPage--;
+        document.getElementById(`page${currentPage}`).classList.add('active');
+    }
+
+    document.querySelector('input[name="employment_status"]').addEventListener('change', function () {
+        const employmentDetails = document.getElementById('employment-details');
+        employmentDetails.style.display = this.value === 'yes' ? 'block' : 'none';
+    });
+</script>
+
+</html>

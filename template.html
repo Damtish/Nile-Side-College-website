@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6">
+    <style>
+        table {
+            width: 100%;
+        }
+        table tr {
+            border: 1px solid black;
+        }
+        table th,td {
+            border: 1px solid black;
+        }
+        img{
+            width: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <img src="images/photo_2023-12-23_17-12-32-removebg-preview.png">
+
+    <h1>Admission Form</h1>
+
+    <p>Admission Type: {{ admission_type }}</p>
+
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ name }}</td>
+        </tr>
+        <tr>
+            <th>Father's Name</th>
+            <td>{{ father_name }}</td>
+        </tr>
+        <tr>
+            <th>Grandfather's Name</th>
+            <td>{{ grandfather_name }}</td>
+        </tr>
+        <tr>
+            <th>Sex</th>
+            <td>{{ sex }}</td>
+        </tr>
+        <tr>
+            <th>Nationality and Place of Birth </th>
+            <td>nationality:{{ nationality }} <br>place_of_birth_town:{{ place_of_birth_town }},<br>place_of_birth_reigon:{{ place_of_birth_reigon }},<br>place_of_birth_country:{{ place_of_birth_country }},
+                <br>date_of_birth:{{ date_of_birth }}
+            </td>
+        </tr>
+
+        <tr>
+            <th>Residence Address</th>
+            <td>
+                <p>House No: {{ house_no }}</p>
+                <p>Kebele: {{ kebele }}</p>
+                <p>Sub City: {{ sub_city }}</p>
+                <p>Town: {{ town }}</p>
+                <p>Region: {{ region }}</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Mailing Address</th>
+            <td>
+                <p>Mailing Address: {{ mailing_address }}</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Contact Information</th>
+            <td>
+                <p>Mobile Number: {{ mobile }}</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Marital Status</th>
+            <td>
+                <p>Marital Status: {{ marital_status }}</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Emergency Contact</th>
+            <td>
+                <p>Name: {{ emergency_contact_name }}</p>
+                <p>Relationship: {{ emergency_contact_relationship }}</p>
+                <p>Phone Number: {{ emergency_contact_mobile }}</p>
+            </td>
+        </tr>
+        <tr>
+            <th>Emergency Contact Residence Address</th>
+            <td>
+                <p>House No: {{ emergency_contact_house_no }}</p>
+                <p>Kebele: {{ emergency_contact_kebele }}</p>
+                <p>Sub City: {{ emergency_contact_sub_city }}</p>
+                <p>Region: {{ emergency_contact_region }}</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table>
+        <thead>
+            <h3>III. Family Background:</h3>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Father's Name</th>
+                <td>{{ father_name }}</td>
+            </tr>
+            <tr>
+                <th>Father's Occupation</th>
+                <td>{{ father_occupation }}</td>
+            </tr>
+            <tr>
+                <th>Father's Education Level</th>
+                <td>{{ father_education }}</td>
+            </tr>
+            <tr>
+                <th>Father's Address</th>
+                <td>{{ father_address }}</td>
+            </tr>
+            <tr>
+                <th>Mother's Name</th>
+                <td>{{ mother_name }}</td>
+            </tr>
+            <tr>
+                <th>Mother's Occupation</th>
+                <td>{{ mother_occupation }}</td>
+            </tr>
+            <tr>
+                <th>Mother's Education Level</th>
+                <td>{{ mother_education }}</td>
+            </tr>
+            <tr>
+                <th>Mother's Address</th>
+                <td>{{ mother_address }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ... (Next sections) -->
+
+
+    <h3>IV. Educational Information:</h3>
+    <h4>Secondary School(s) Attended:</h4>
+    <table>
+        <tr>
+            <th>School Name</th>
+            <td>{{ school_name }}</td>
+        </tr>
+        <tr>
+            <th>Town</th>
+            <td>{{ town }}</td>
+        </tr>
+        <tr>
+            <th>Years Attended</th>
+            <td>{{ years_attended }}</td>
+        </tr>
+        <tr>
+            <th>Last Grade Completed</th>
+            <td>{{ last_grade_completed }}</td>
+        </tr>
+    </table>
+
+
+    <h4> School Leaving Examination Details:</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Subject</th>
+                <th>Registration No</th>
+                <th>Year</th>
+                <th>Grade/Mark</th>
+                <th>Examination Center</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mathematics</td>
+                <td>{{ math_registration_no }}</td>
+                <td>{{ math_exam_year }}</td>
+                <td>{{ math_grade_mark }}</td>
+                <td>{{ math_exam_center }}</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>English</td>
+                <td>{{ english_registration_no }}</td>
+                <td>{{ english_exam_year }}</td>
+                <td>{{ english_grade_mark }}</td>
+                <td>{{ english_exam_center }}</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>{{ course3_name }}</td>
+                <td>{{ course3_registration_no }}</td>
+                <td>{{ course3_exam_year }}</td>
+                <td>{{ course3_grade_mark }}</td>
+                <td>{{ course3_exam_center }}</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>{{ course4_name }}</td>
+                <td>{{ course4_registration_no }}</td>
+                <td>{{ course4_exam_year }}</td>
+                <td>{{ course4_grade_mark }}</td>
+                <td>{{ course4_exam_center }}</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>{{ course5_name }}</td>
+                <td>{{ course5_registration_no }}</td>
+                <td>{{ course5_exam_year }}</td>
+                <td>{{ course5_grade_mark }}</td>
+                <td>{{ course5_exam_center }}</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>{{ course6_name }}</td>
+                <td>{{ course6_registration_no }}</td>
+                <td>{{ course6_exam_year }}</td>
+                <td>{{ course6_grade_mark }}</td>
+                <td>{{ course6_exam_center }}</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>{{ course7_name }}</td>
+                <td>{{ course7_registration_no }}</td>
+                <td>{{ course7_exam_year }}</td>
+                <td>{{ course7_grade_mark }}</td>
+                <td>{{ course7_exam_center }}</td>
+            </tr>
+            <!-- Repeat similar rows for subjects 3 to 7 -->
+            <tr>
+                <th>Grade point average(GPA)/Average Mark</th>
+                <td> {{ gpa }}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <!-- ... (Previous sections) -->
+
+
+
+    <h3>V. Employment:</h3>
+    <table>
+        <tr>
+            <th> currently employed?</th>
+            <td>
+                {{ employment_status }}
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>Employer</th>
+            <td>
+                {{ employer }}
+            </td>
+        </tr>
+        <tr>
+            <th>Type of Job</th>
+            <td>
+                {{ job_type }}
+            </td>
+        </tr>
+        <tr>
+            <th>Mailing Address</th>
+            <td>
+                {{ mailing_address_employer }}
+            </td>
+        </tr>
+        <tr>
+            <th>Telephone</th>
+            <td>
+                {{ telephone_employer }}
+            </td>
+        </tr>
+    </table>
+
+    <h3>VI. Previous Employment:</h3>
+    <table>
+
+        <tr>
+            <th>Previous Employment?</th>
+            <td>
+                {{ previous_employment }}
+            </td>
+        </tr>
+        <tr>
+            <th>Type of Job</th>
+            <td>
+                {{ previous_job_type }}
+            </td>
+        </tr>
+        <tr>
+            <th>Employer</th>
+            <td>
+                {{ previous_employer }}
+            </td>
+        </tr>
+
+        <tr>
+            <th>Telephone</th>
+            <td>
+                {{ telephone_employer }}
+            </td>
+        </tr>
+
+        <tr>
+            <th>Service Years From-To:</th>
+            <td>
+                {{ service_years_from }} -{{ service_years_to }}
+            </td>
+        </tr>
+    </table>
+
+    <h4>VII. Desired Field of Study: {{ field_of_study }}</h4>
+
+    <h5>Signature of Applicant: {{ applicant_signature }}</h5>
+</body>
+
+</html>

@@ -125,6 +125,10 @@
     margin-top: 20px;
     
 }
+.footer-bottom .location img{
+    width: 30px; 
+    margin-right: 10px;
+}
 .footer-bottom p{
     color: white;
 }
