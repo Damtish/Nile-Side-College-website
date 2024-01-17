@@ -21,8 +21,26 @@ span {
     flex-direction: column;
     align-items: center;
 }
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
 .register{   
     color: white;
+    margin-top: 50px;
     text-decoration: none;
     border-radius: 13.029px;
     background: #90CAF9;
