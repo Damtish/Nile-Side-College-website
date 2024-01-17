@@ -5,10 +5,9 @@
     <title>Nilde Side Admisson Form</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-   </head>
+</head>
 <style>
-
-    header{
+    header {
         background-color: white;
     }
 
@@ -27,9 +26,42 @@
     table td {
         background-color: unset;
     }
+
+    .back-btn {
+        background-color: white;
+        color: black;
+        width: 100px;
+        padding-top:7px ;
+        padding-bottom:7px ;
+        border-radius: 15px;
+        border: 1px solid black;
+}
+.back-btn a span{
+}
+
+.back-btn a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}
+
+.back-btn img {
+    width: 30px; /* Adjust the size of the back button icon */
+    height: 30px;
+}
+
 </style>
 
 <body>
+    <div class="back-btn" onclick="'addmissions.html'">
+        <a href="addmissions.html">
+            <img src="images/arrow-left.svg" alt="Back"><span>Back</span>
+        </a>
+        
+    </div>
     <h1>NILE SIDE COLLEGE</h1>
     <h2>Application for admisson to the under Graduate Programme instruction</h2>
     <p>This application Form should be completed by the applicant
@@ -44,7 +76,8 @@
         <div class="page active" id="page1">
 
             <h3>I. Classification of Admission:</h3>
-            <label><input type="radio" name="admission_type" value="day(Regular) Programme" required> Day (Regular) Programme</label>
+            <label><input type="radio" name="admission_type" value="day(Regular) Programme" required> Day (Regular)
+                Programme</label>
             <label><input type="radio" name="admission_type" value="evening(Extension)" required> Evening (Extension)
                 Programme</label>
 
@@ -248,7 +281,8 @@
             <div id="previous-employment-details" style="display: none;">
                 <label for="previous_job_type">Type of Job: <input type="text" name="previous_job_type"></label><br>
                 <label for="previous_employer">Employer: <input type="text" name="previous_employer"></label><br>
-                <label for="previous_telephone">Telephone: <input type="tel" name="telephone_previous_employer"></label><br>
+                <label for="previous_telephone">Telephone: <input type="tel"
+                        name="telephone_previous_employer"></label><br>
                 <label for="service_years_from">Service Years From: <input type="text"
                         name="service_years_from"></label><br>
                 <label for="service_years_to">Service Years To: <input type="text" name="service_years_to"></label><br>
@@ -291,7 +325,7 @@
             <label for="applicant_signature">Signature of Applicant: <input type="text" name="applicant_signature"
                     required></label><br>
 
-            
+
             <script>
                 document.querySelector('input[name="previous_employment"]').addEventListener('change', function () {
                     const previousEmploymentDetails = document.getElementById('previous-employment-details');
@@ -313,7 +347,12 @@
 
 </body>
 <script>
- 
+
+function goBack() {
+            window.history.back();
+        }
+
+
     let currentPage = 1;
 
     function nextPage() {
@@ -332,6 +371,8 @@
         const employmentDetails = document.getElementById('employment-details');
         employmentDetails.style.display = this.value === 'yes' ? 'block' : 'none';
     });
+
+
 </script>
 
 </html>
