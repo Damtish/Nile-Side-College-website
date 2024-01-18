@@ -19,20 +19,21 @@ span {
   top: 100px;
   left: 0;
   width: 100%;
-  height: 90vh;
-  background-image: image-set('../images/IMG_4926.png');
+  height: 80vh;
+  /* background-image: image-set('../images/IMG_4926.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
+  background-position: center; */
+  opacity: 0.2;
   /* Adjust opacity as desired */
   z-index: 1;
+  background-color: #000000;
 
 }
 
 .homepage {
-  background-color: #4b4b4b;
-  height: 90vh;
+  /* background-color: #4b4b4b; */
+  height: 80vh;
 
 
 
@@ -40,6 +41,25 @@ span {
 
 .homepage * {
   z-index: 100;
+}
+.slideshow-container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background color with transparency */
+  z-index: -1;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
 }
 
 .introduction {
@@ -407,11 +427,12 @@ p {
 
 @media (max-width:1110px) {
 
-  .wrapper::before,
-  .wrapper {
-
-    height: 60vh;
+  .homepage{
+    height: 75vh;
   }
+.slideshow-container{
+  height: 80vh;
+}
 
   .logo2 {
     width: 100%;
@@ -452,10 +473,15 @@ p {
 
 @media (max-width: 768px) {
 
-  .wrapper::before,
-  .wrapper {
-    height: 60vh;
+  .homepage{
+    height: 50vh;
   }
+  .homepage::before{
+    height: 50vh;
+  }
+.slideshow-container{
+  height: 50vh;
+}
 
   .introduction {
     display: flex;
@@ -534,6 +560,17 @@ p {
 }
 
 @media (max-width:680px) {
+
+  .homepage{
+    height: 50vh;
+  }
+  .homepage::before{
+    height: 50vh;
+  }
+.slideshow-container{
+  height: 50vh;
+}
+
   .introduction {
     flex-direction: column;
   }
@@ -569,21 +606,33 @@ p {
 }
 
 @media (max-width: 460px) {
+  .homepage{
+    height: 50vh;
+  }
+  .homepage::before{
+    height: 50vh;
+  }
+.slideshow-container{
+  height: 50vh;
+}
+
   .introduction {
     display: flex;
     width: 100%;
     height: 100%;
+    gap: 0px;
     margin: 0 auto;
     justify-content: center;
+
 
   }
 
   .introduction .logo2 p {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .introduction .logo2 img {
-    width: 25%;
+    width: 20%;
   }
 
   /* .wrapper2 {
