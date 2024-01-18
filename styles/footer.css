@@ -83,7 +83,9 @@
     color: white;
     margin-bottom: 10px;
 }
-
+.phone-number img{
+    width: 30px;
+}
 
 .footer-right {
     float: right;

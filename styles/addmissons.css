@@ -16,10 +16,16 @@ span {
     gap: 50px;
     text-wrap: wrap;
 }
+.AdmissiontoProgrammes{
+    width: 50%;
+    margin: 0 auto;
+}
 .admission_procedure{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .custom-table {
@@ -50,12 +56,24 @@ span {
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 1100px){
     .intro1{
      flex-wrap: wrap;
     }   
     .intro1 img{
         width: 100%;
     }
-    
+
+    table{
+        display: block;
+        text-wrap: wrap;
+        overflow-x: auto;
+    }
+
+    .AdmissiontoProgrammes{
+        width: 100%;
+    }
+    .admission_procedure{
+        width: 100%;
+    }
 }
