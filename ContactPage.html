@@ -36,6 +36,41 @@
 
     </header>
     <div class="homepage">
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="mySlides fade">
+                <img src="images/IMG_4926-min.webp" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4927-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4930-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4931-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4932-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4934-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4937-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4941-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4943-min.webp" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/IMG_4946-min.webp" alt="Slide 2">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
         <div class="introduction">
             <div class="quote-section">
                 <h2>REACH US</h2>
@@ -191,6 +226,28 @@
         const navItems = document.querySelector('.nav-items');
         navItems.classList.toggle('show');
         document.body.classList.toggle('menu-open');
+    }
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(showSlides, 5000); // Change slide every 2 seconds (adjust as needed)
     }
 
 
